@@ -1,0 +1,80 @@
+STEGANOGRAPHY 3x3 EXPERIMENTAL RESULTS
+========================================
+
+Image Type: Landscape
+----------------------------------------
+
+  Payload Size: 5% (39320 bits)
+    Metric            | Sequential | PRNG-Based
+    ------------------+------------+-----------
+    PSNR (dB)         |      64.15 |      60.19
+    Avg Chi-Square    |     565.67 |      92.30
+    RS Embed Rate     |     0.0239 |     0.0000
+
+  Payload Size: 50% (393200 bits)
+    Metric            | Sequential | PRNG-Based
+    ------------------+------------+-----------
+    PSNR (dB)         |      54.16 |      50.17
+    Avg Chi-Square    |   21641.88 |    8224.45
+    RS Embed Rate     |     0.6010 |     0.2000
+
+  Payload Size: 95% (747080 bits)
+    Metric            | Sequential | PRNG-Based
+    ------------------+------------+-----------
+    PSNR (dB)         |      51.37 |      47.39
+    Avg Chi-Square    |   59538.52 |   29611.98
+    RS Embed Rate     |     1.0000 |     0.3585
+
+========================================
+
+Image Type: Portrait
+----------------------------------------
+
+  Payload Size: 5% (39320 bits)
+    Metric            | Sequential | PRNG-Based
+    ------------------+------------+-----------
+    PSNR (dB)         |      64.18 |      60.18
+    Avg Chi-Square    |     443.02 |     110.01
+    RS Embed Rate     |     0.0000 |     0.0000
+
+  Payload Size: 50% (393200 bits)
+    Metric            | Sequential | PRNG-Based
+    ------------------+------------+-----------
+    PSNR (dB)         |      54.15 |      50.17
+    Avg Chi-Square    |   18570.84 |    9957.15
+    RS Embed Rate     |     0.4485 |     0.1823
+
+  Payload Size: 95% (747080 bits)
+    Metric            | Sequential | PRNG-Based
+    ------------------+------------+-----------
+    PSNR (dB)         |      51.36 |      47.38
+    Avg Chi-Square    |   64158.12 |   35894.58
+    RS Embed Rate     |     1.0000 |     0.3395
+
+========================================
+
+Image Type: Cityscape
+----------------------------------------
+
+  Payload Size: 5% (39320 bits)
+    Metric            | Sequential | PRNG-Based
+    ------------------+------------+-----------
+    PSNR (dB)         |      64.19 |      60.13
+    Avg Chi-Square    |    1619.77 |      98.22
+    RS Embed Rate     |     0.1076 |     0.0000
+
+  Payload Size: 50% (393200 bits)
+    Metric            | Sequential | PRNG-Based
+    ------------------+------------+-----------
+    PSNR (dB)         |      54.15 |      50.17
+    Avg Chi-Square    |   19476.40 |    8383.60
+    RS Embed Rate     |     0.7656 |     0.1946
+
+  Payload Size: 95% (747080 bits)
+    Metric            | Sequential | PRNG-Based
+    ------------------+------------+-----------
+    PSNR (dB)         |      51.36 |      47.39
+    Avg Chi-Square    |   59847.52 |   30203.99
+    RS Embed Rate     |     1.0000 |     0.3163
+
+========================================

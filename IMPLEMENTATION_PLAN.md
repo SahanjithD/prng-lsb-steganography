@@ -9,7 +9,7 @@
 ```
 Phase 1 ─► Phase 2 ─► Phase 3 ─► Phase 4 ─► Phase 5
 utils.py    seq_lsb    prng_lsb   metrics    main.py
-(done)      (done)     (pending)  (pending)  (pending)
+(done)      (done)     (done)     (done)     (done)
 ```
 
 ---
@@ -220,6 +220,6 @@ matplotlib         # Histogram plots and visualisation
 |-------|------|--------|
 | 1 | `src/utils.py` | ✅ Complete |
 | 2 | `src/sequential_lsb.py` | ✅ Complete |
-| 3 | `src/prng_lsb.py` | 🔲 Pending |
-| 4 | `src/metrics.py` | 🔲 Pending |
-| 5 | `main.py` | 🔲 Pending |
+| 3 | `src/prng_lsb.py` | ✅ Complete |
+| 4 | `src/metrics.py` | ✅ Complete |
+| 5 | `main.py` | ✅ Complete |

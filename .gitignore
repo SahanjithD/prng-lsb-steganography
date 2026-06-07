@@ -23,8 +23,13 @@ Thumbs.db
 Desktop.ini
 .DS_Store
 
-# Results (generated outputs — regenerate with main.py)
+# Results and Output (generated dynamically)
 results/
+results_experiment/
+presentation_panels/
 
 # Test artifacts
 test_*.png
+
+# Archives
+*.zip

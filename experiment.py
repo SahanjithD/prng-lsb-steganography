@@ -126,19 +126,19 @@ def run_experiment() -> None:
         # --- Generate Trend Charts for this image ---
         plot_metric_trends(
             payload_targets, psnr_seq, psnr_prng,
-            metric_name="PSNR",
+            metric_name=f"{img_name} - PSNR",
             save_path=os.path.join(output_dir, f"{img_name.lower()}_trend_psnr.png"),
             y_label="PSNR (dB)"
         )
         plot_metric_trends(
             payload_targets, chi2_seq, chi2_prng,
-            metric_name="Average Histogram Chi-Square",
+            metric_name=f"{img_name} - Avg Chi-Square",
             save_path=os.path.join(output_dir, f"{img_name.lower()}_trend_chi2.png"),
             y_label="Chi-Square Value"
         )
         plot_metric_trends(
             payload_targets, rs_seq, rs_prng,
-            metric_name="RS Estimated Embed Rate",
+            metric_name=f"{img_name} - RS Embed Rate",
             save_path=os.path.join(output_dir, f"{img_name.lower()}_trend_rs.png"),
             y_label="Estimated Rate (0.0 to 1.0)"
         )

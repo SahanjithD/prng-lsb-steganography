@@ -37,12 +37,20 @@ pip install -r requirements.txt
 
 ## Usage
 
+**1. Run the Full Experimental Matrix (Highly Recommended for Evaluators)**
+This script automatically runs a 3x3 evaluation (3 image types vs 3 payload sizes), generates all stego images, calculates all metrics, and produces comparative charts.
+```bash
+python experiment.py
+```
+*(All generated data and charts will be saved in the `results_experiment/` folder).*
+
+**2. Manual Single-Image Commands**
 ```bash
 # Embed a message using the sequential (baseline) method
-python main.py embed --method sequential --image images/cover.png --message "Hello"
+python main.py embed --method sequential --image images/landscape.png --message "Hello!"
 
 # Embed a message using the PRNG-based method (requires a key)
-python main.py embed --method prng --image images/cover.png --message "Hello" --key "secret123"
+python main.py embed --method prng --image images/landscape.png --message "Hello!" --key "secret123"
 
 # Extract from a sequential stego image
 python main.py extract --method sequential --image results/stego_sequential.png
@@ -50,8 +58,8 @@ python main.py extract --method sequential --image results/stego_sequential.png
 # Extract from a PRNG stego image (requires the same key)
 python main.py extract --method prng --image results/stego_prng.png --key "secret123"
 
-# Run a full comparison experiment (both methods side-by-side)
-python main.py compare --image images/cover.png --message "Hello" --key "secret123"
+# Run a quick comparison on a single image
+python main.py compare --image images/landscape.png --message "Hello!" --key "secret123"
 ```
 
 ## Evaluation Metrics
@@ -84,7 +92,6 @@ prng-lsb-steganography/
 ├── images/                    # Input cover images (PNG/BMP)
 ├── results/                   # Output stego images, plots, and reports
 ├── requirements.txt           # Python dependencies
-├── IMPLEMENTATION_PLAN.md     # Detailed implementation plan & algorithm design
 └── README.md                  # This file
 ```
 

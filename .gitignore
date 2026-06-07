@@ -33,3 +33,6 @@ test_*.png
 
 # Archives
 *.zip
+
+# Documentation not to be tracked
+presentation_guide_simple.md
